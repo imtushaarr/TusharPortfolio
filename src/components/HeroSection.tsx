@@ -2,7 +2,7 @@ import { Mail, Linkedin, MapPin, Phone } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden pt-16">
       {/* Floating neural dots */}
       {[...Array(20)].map((_, i) => (
         <div
@@ -31,30 +31,33 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <h1 className="animate-slide-up animate-slide-up-delay-1 text-5xl md:text-7xl font-bold tracking-tight mb-4">
+        <h1 className="animate-slide-up animate-slide-up-delay-1 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4">
           <span className="text-foreground">Tushar </span>
           <span className="text-gradient">Gupta</span>
         </h1>
 
-        <p className="animate-slide-up animate-slide-up-delay-2 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="animate-slide-up animate-slide-up-delay-2 text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-4">
           Computer Science graduate passionate about full-stack development, AI-powered solutions, and building scalable web applications.
         </p>
 
-        <div className="animate-slide-up animate-slide-up-delay-3 flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
-          <a href="mailto:tusharguptagps@gmail.com" className="flex items-center gap-2 glass px-4 py-2 rounded-full hover:border-primary/50 transition-all duration-300 hover:glow-orange">
-            <Mail className="w-4 h-4 text-primary" />
-            tusharguptagps@gmail.com
+        <div className="animate-slide-up animate-slide-up-delay-3 flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm text-muted-foreground px-4">
+          <a href="mailto:tusharguptagps@gmail.com" className="flex items-center gap-1.5 sm:gap-2 glass px-3 sm:px-4 py-2 rounded-full hover:border-primary/50 transition-all duration-300 hover:glow-orange">
+            <Mail className="w-3 h-3 sm:w-4 sm:h-4 text-primary shrink-0" />
+            <span className="hidden sm:inline">tusharguptagps@gmail.com</span>
+            <span className="sm:hidden">Email</span>
           </a>
-          <a href="https://linkedin.com/in/imtushaarr" target="_blank" rel="noreferrer" className="flex items-center gap-2 glass px-4 py-2 rounded-full hover:border-secondary/50 transition-all duration-300 hover:glow-blue">
-            <Linkedin className="w-4 h-4 text-secondary" />
-            imtushaarr
+          <a href="https://linkedin.com/in/imtushaarr" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 sm:gap-2 glass px-3 sm:px-4 py-2 rounded-full hover:border-secondary/50 transition-all duration-300 hover:glow-blue">
+            <Linkedin className="w-3 h-3 sm:w-4 sm:h-4 text-secondary shrink-0" />
+            <span className="hidden sm:inline">imtushaarr</span>
+            <span className="sm:hidden">LinkedIn</span>
           </a>
-          <span className="flex items-center gap-2 glass px-4 py-2 rounded-full">
-            <MapPin className="w-4 h-4 text-primary" />
-            Chandigarh, India
+          <span className="flex items-center gap-1.5 sm:gap-2 glass px-3 sm:px-4 py-2 rounded-full">
+            <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-primary shrink-0" />
+            <span className="hidden sm:inline">Chandigarh, India</span>
+            <span className="sm:hidden">Chandigarh</span>
           </span>
-          <span className="flex items-center gap-2 glass px-4 py-2 rounded-full">
-            <Phone className="w-4 h-4 text-secondary" />
+          <span className="hidden md:flex items-center gap-1.5 sm:gap-2 glass px-3 sm:px-4 py-2 rounded-full">
+            <Phone className="w-3 h-3 sm:w-4 sm:h-4 text-secondary shrink-0" />
             +91-9893741437
           </span>
         </div>

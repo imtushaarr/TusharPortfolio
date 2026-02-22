@@ -11,12 +11,12 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <section className="py-20 px-6 relative">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 relative">
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
 
       <div className="container max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-2 text-gradient">Skills</h2>
-        <p className="text-muted-foreground mb-10 text-sm">Technical expertise</p>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-gradient">Skills</h2>
+        <p className="text-muted-foreground mb-6 sm:mb-10 text-xs sm:text-sm">Technical expertise</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {skills.map((group, i) => (

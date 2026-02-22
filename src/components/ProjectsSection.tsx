@@ -27,18 +27,18 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-20 px-6 relative">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 relative">
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
       <div className="container max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-2 text-gradient">Projects</h2>
-        <p className="text-muted-foreground mb-10 text-sm">Featured work</p>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-gradient">Projects</h2>
+        <p className="text-muted-foreground mb-6 sm:mb-10 text-xs sm:text-sm">Featured work</p>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {projects.map((project) => (
             <div
               key={project.title}
-              className={`glass rounded-xl p-6 hover:${project.accent === 'primary' ? 'glow-orange' : 'glow-blue'} transition-all duration-500 group`}
+              className={`glass rounded-xl p-4 sm:p-6 hover:${project.accent === 'primary' ? 'glow-orange' : 'glow-blue'} transition-all duration-500 group`}
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className={`p-2 rounded-lg ${project.accent === 'primary' ? 'bg-primary/10 text-primary' : 'bg-secondary/10 text-secondary'}`}>
